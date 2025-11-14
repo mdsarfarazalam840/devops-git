@@ -1,0 +1,15 @@
+print(
+    {
+        n: (
+            lambda x: (
+                1
+                if x == 0
+                else x
+                * (lambda f, y: f(f, y - 1) * y if y > 1 else 1)(
+                    lambda f, y: f(f, y - 1) * y if y > 1 else 1, n
+                )
+            )
+        )(n)
+        for n in range(1, 11)
+    }
+)
