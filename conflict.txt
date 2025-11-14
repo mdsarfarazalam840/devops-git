@@ -1,1 +1,2 @@
-Line from branchB
+Hello Devops
+Line from branchA and branchB
